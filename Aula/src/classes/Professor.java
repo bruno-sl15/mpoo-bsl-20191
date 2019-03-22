@@ -11,12 +11,13 @@ public class Professor extends Pessoa {
 		this.admissao = admissao;
 	}
 	
+	//Sobrescrevendo o mÃ©todo toString()
 	@Override
 	public String toString() {
 		return "Nome: " + super.getNome()
 			+ "\nCPF: " + super.getCpf()
-			+ "\nAdmissão: " + this.admissao
-			+ "\nRua: " + super.getEndereco().getRua() + " Nº " + super.getEndereco().getNumero()
+			+ "\nAdmissÃ£o: " + this.admissao
+			+ "\nRua: " + super.getEndereco().getRua() + " NÂº " + super.getEndereco().getNumero()
 			+ "\nCidade: " + super.getEndereco().getCidade()
 			+ "\nComplemento: " + super.getEndereco().getComplemento();	
 	}

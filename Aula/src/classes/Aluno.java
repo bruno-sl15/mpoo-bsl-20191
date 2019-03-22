@@ -19,14 +19,15 @@ public class Aluno extends Pessoa {
 	public void setPeriodoEntrada(int periodoEntrada) {
 		this.periodoEntrada = periodoEntrada;
 	}
-
+	
+	//Sobrescrevendo o mÃ©todo toString()
 	@Override
 	public String toString() {
 		return "Nome: " + super.getNome()
 			+ "\nCPF: " + super.getCpf()
 			+ "\nAno de Entrada: " + this.anoEntrada
-			+ "\nPeríodo de Entrada: " + this.periodoEntrada
-			+ "\nRua: " + super.getEndereco().getRua() + " Nº " + super.getEndereco().getNumero()
+			+ "\nPerÃ­odo de Entrada: " + this.periodoEntrada
+			+ "\nRua: " + super.getEndereco().getRua() + " NÂº " + super.getEndereco().getNumero()
 			+ "\nCidade: " + super.getEndereco().getCidade()
 			+ "\nComplemento: " + super.getEndereco().getComplemento();	
 	}
